@@ -5,6 +5,24 @@
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>Mi primera web</title>
+        <style>
+            .banderaPeru {
+                height: 120px;
+                display: flex;
+                width: 330px;
+                align-items: stretch;
+                border: solid 1px black;
+            }
+            .banderaPeru .rojo {
+                background: red;
+                height: 100%;
+                flex: 1;
+            }
+            .banderaPeru .blanco {
+                flex: 1;
+                background: white;
+            }
+        </style>
     </head>
     <body>
         <h1>Frank De La Rosa</h1>
@@ -12,5 +30,50 @@
         <h3>31 Años</h3>
         <h4>960579083</h4>
         <p>Israel</p>
+        <ul>
+            <li>Opcion 1</li>
+            <li>Opcion 2</li>
+            <li>Opcion 3</li>
+        </ul>
+        <ol>
+            <li>Pp1</li>
+            <li>Pp2</li>
+            <li>Pp3</li>
+        </ol>
+        <img src="img/profe.jpg">
+        <a href="http://google.com" target="_blank">Indexa a Google</a>
+        <img src="img/homer-simpson.gif" style="width: 500px;">
+        <form>
+            <input type="text" placeholder="Nombre"/>
+            <input type="email" placeholder="correo"/>
+            <input type="date" placeholder="cumpleaños"/>
+            <input type="password" placeholder="Contraseña"/>
+            <button type="submit" >Enviar</button>
+        </form>
+        <table>
+            <tr>
+                <th>Alumno</th>
+                <th>Nota</th>
+            </tr>
+            <tr>
+                <td>Sebastian Alcantara</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Rebeca Milera</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Jose Espinoza</td>
+                <td>10</td>
+            </tr>
+        </table>
+        <!-- ESTO NO ES PARTE DE LA CLASE -->
+        <!-- bandera del peru -->
+        <div class="bandera banderaPeru">
+            <div class="rojo"></div>
+            <div class="blanco"></div>
+            <div class="rojo"></div>
+        </div>
     </body>
 </html>
